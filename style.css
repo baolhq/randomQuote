@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Recursive:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: background-color ease 1s;
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#quote-text {
+  font-family: "Raleway", arial;
+  font-size: 35px;
+  padding: 30px;
+}
+
+#quote-author {
+  float: right;
+  margin-right: 50px;
+  font-style: italic;
+  display: inline;
+}
+
+#row {
+  padding-top: 30px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#social a {
+  font-size: 40px;
+}
+
+#new-quote {
+  border: none;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#ref {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  #quote-text {
+    font-size: 1.5rem;
+  }
+  #ref {
+    bottom: -15%;
+  }
+}
+
+@media (max-width: 520px) {
+  #wrapper {
+    width: 80vw;
+  }
+}
+
+@media (max-height: 640px) {
+  #wrapper {
+    width: 80vw;
+  }
+  #quote-text {
+    font-size: 1.5rem;
+  }
+}

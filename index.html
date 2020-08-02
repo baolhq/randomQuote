@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Machine</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="quote-box">
+        <div id="quote-text">
+          <i class="fa fa-quote-left"></i>
+          <span id="text" style="opacity: 1;"
+            >You can’t use up creativity. The more you use, the more you
+            have.</span
+          >
+        </div>
+        <div id="quote-author" style="opacity: 1;">
+          -
+          <span id="author">Maya Angelou</span>
+        </div>
+        <div id="row">
+          <div id="social">
+            <a
+              id="tweet-quote"
+              href="http://www.twitter.com/intent/tweet/"
+              target="_blank"
+              ><i class="fa fa-twitter-square"></i
+            ></a>
+            <a href="#"><i class="fa fa-tumblr-square"></i></a>
+          </div>
+          <button id="new-quote" onclick="changeQuote()">New Quote</button>
+        </div>
+      </div>
+      <span id="ref"
+        >by
+        <u>
+          <a href="http://facebook.com/quocbao.kaiser/" target="_blank"
+            >@baolhq</a
+          ></u
+        ></span
+      >
+    </div>
+
+    <script src="script.js" type="text/jsx"></script>
+  </body>
+</html>
